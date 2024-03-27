@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite de Pruebas">
+    <parameter name="letra1" value="A"></parameter>
+    <parameter name="letra2" value="B"></parameter>
+    <test name="Prueba de Automatización">
+
+        <classes>
+
+            <class name="FileTest.FileTest" />
+            <class name="KeyPresses.KeyPressesTest" />
+            <class name="Example.ExampleTest"></class>
+
+        </classes>
+    </test>
+</suite>
