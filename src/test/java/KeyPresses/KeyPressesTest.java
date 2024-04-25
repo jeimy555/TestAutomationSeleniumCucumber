@@ -15,10 +15,16 @@ public class KeyPressesTest extends BaseTests {
     @Parameters({"letra1", "letra2"})
     public void testKeysPressed(String letra1, String letra2){
         var keyPressesPage= homePage.KeyPresses();
-         keyPressesPage.enterText(letra1);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        keyPressesPage.enterText(letra1);
          keyPressesPage.enterText(letra2);
          assertEquals(keyPressesPage.getResult(),
                 "You entered: "+letra2);
+
 
 
     }
