@@ -1,22 +1,26 @@
 package pages;
 
+import definitions.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomePage {
 
     private WebDriver driver;
     public HomePage (WebDriver driver){
-        this.driver=driver;
+        this.driver= Hooks.driver;
+    }
+
+    public HomePage (){
+
     }
 
     public LoginPage clickFormA(){
     clickLink("Form Authentication");
-    return new LoginPage(driver);
+    return new LoginPage(Hooks.driver);
     }
     public DropDownPage clickDrop(){
-        clickLink("Dropdown");
+        clickLink("tests/Dropdown");
         return new DropDownPage(driver);
     }
     public Forgot clickForgot(){
@@ -24,7 +28,7 @@ public class HomePage {
         return new Forgot(driver);
     }
     public Hovers clickHovers(){
-        clickLink("Hovers");
+        clickLink("tests/Hovers");
         return new Hovers(driver);
     }
     public KeyPressesPage KeyPresses(){
@@ -52,7 +56,7 @@ public class HomePage {
 
 
     private void clickLink(String link) {
-        driver.findElement(By.linkText(link)).click();
+        Hooks.driver.findElement(By.linkText(link)).click();
 
     }
 }

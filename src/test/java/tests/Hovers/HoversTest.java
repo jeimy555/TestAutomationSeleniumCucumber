@@ -1,6 +1,6 @@
-package Hovers;
+package tests.Hovers;
 
-import base.BaseTests;
+import tests.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;

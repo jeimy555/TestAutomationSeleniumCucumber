@@ -1,11 +1,8 @@
-package KeyPresses;
+package tests.KeyPresses;
 
-import base.BaseTests;
-import org.openqa.selenium.Keys;
+import tests.base.BaseTests;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.KeyPressesPage;
 
 import static org.testng.Assert.assertEquals;
 

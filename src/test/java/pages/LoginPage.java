@@ -1,5 +1,6 @@
 package pages;
 
+import definitions.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,12 +13,16 @@ public class LoginPage {
 
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        this.driver = Hooks.driver;
     }
 
-    public SecureArea loginUser(String username, String password){
+    public void loginUser(String username, String password){
         driver.findElement(usernameField).sendKeys(username);
         driver.findElement(passwordField).sendKeys(password);
+
+
+    }
+    public SecureArea clickButtonLogin(){
         driver.findElement(buttonLogin).click();
         return new SecureArea(driver);
     }

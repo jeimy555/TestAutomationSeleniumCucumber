@@ -1,6 +1,6 @@
-package ForgotPassword;
+package tests.ForgotPassword;
 
-import base.BaseTests;
+import tests.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;

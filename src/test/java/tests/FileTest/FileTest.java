@@ -1,7 +1,6 @@
-package FileTest;
+package tests.FileTest;
 
-import base.BaseTests;
-import org.testng.Assert;
+import tests.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

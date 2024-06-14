@@ -1,6 +1,6 @@
-package Alerts;
+package tests.Alerts;
 
-import base.BaseTests;
+import tests.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

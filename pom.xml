@@ -16,7 +16,7 @@
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.7.1</version>
+      <version>7.10.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -37,6 +37,25 @@
       <artifactId>webdrivermanager</artifactId>
       <version>5.7.0</version>
     </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.18.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.20.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>7.18.0</version>
+    </dependency>
+
+
   </dependencies>
   <build>
     <plugins>
